@@ -19,11 +19,11 @@ checkbox.addEventListener('input', () => {
   checkboxBg.classList.toggle('active')
 })
 
-animateSlider.style.width = `${100 - ((price - 8) / 24) * 100}%`
+animateSlider.style.width = `${100 - ((price - 8) / 28) * 100}%`
 
 input.addEventListener('input', () => {
   price = input.value
-  animateSlider.style.width = `${100 - ((price - 8) / 24) * 100}%`
+  animateSlider.style.width = `${100 - ((price - 8) / 28) * 100}%`
   if (checkbox.checked) {
     originalPrice = price
     price = price * 0.75
